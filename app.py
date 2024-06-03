@@ -11,8 +11,7 @@ import yt_dlp as youtube_dl
 
 # Chỉ định đường dẫn đến tệp thực thi của Tesseract
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
-temp = pathlib.PosixPath   
-pathlib.PosixPath = pathlib.WindowsPath
+
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = 'static/uploads'
